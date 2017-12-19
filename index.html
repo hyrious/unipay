@@ -1,0 +1,16 @@
+<script>
+function getApp(){ 
+  var ua = window.navigator.userAgent.toLowerCase(); 
+  if(ua.match(/MicroMessenger/i) == 'micromessenger'){ 
+    return 'wechat'
+  }else if(ua.match(/AlipayClient/i) == 'alipayclient'){ 
+    return 'alipay'
+  }else{
+    return false; 
+  }
+} 
+  
+  app = getApp();
+  if(app == 'wechat') window.location = "wxp://f2f0Pfzq9UyZsq1aRB_rcJFVn1z1XXI6g4vq";
+  if(app == 'alipay') window.location = "HTTPS://QR.ALIPAY.COM/FKX023785BF0E0EWVUR4C3";
+</script>
