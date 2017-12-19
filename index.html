@@ -8,6 +8,8 @@ function getApp(){
     return 'wechat'
   }else if(ua.match(/AlipayClient/i) == 'alipayclient'){ 
     return 'alipay'
+  }else if(ua.match(/mqqbrowser/i) == 'mqqbrowser'){
+    return 'mqq'
   }else{
     return false; 
   }
@@ -16,6 +18,6 @@ function getApp(){
   app = getApp();
   if(app == 'wechat') window.location = "http://pay.hotapp.cn/60263424";
   if(app == 'alipay') window.location = "HTTPS://QR.ALIPAY.COM/FKX023785BF0E0EWVUR4C3";
-  
+  if(app == 'mqq')    window.location = "https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&a=1&u=297314126&ac=283C0BBA11609455DDA204D6CCC943016FC09DE5E4592645C08765B546493E47&n=.&f=wallet"
 </script>
 </body>
